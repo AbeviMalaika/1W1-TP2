@@ -1,0 +1,55 @@
+/*
+<figure class="galerie">
+<figure class="galerie__figure">
+    <img class="galerie__img" src="images/64a300d0572f25f2be24798b_papillon-monarque-emergence20-topweb.jpg" alt="">
+    <figcaption class="galerie__caption"></figcaption>
+</figure>
+</figure>
+*/
+
+/*la section galerie*/
+#galerie{
+    background-color: brown;
+}
+
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+/*conteneur d'image*/
+.galerie__figure{
+    width: 300px;
+    transform: scale(1);
+    transition: all .5s;
+    /*border: 1px solid #444;*/
+}
+
+/*image*/
+.galerie__img{
+    width: 100%;
+    /*filter: grayscale(100%);*/
+    /*filter: hue-rotate(170deg);*/
+    filter: blur(2px) grayscale(100%);
+    /*on ajoute plusieurs filtres à la même propriété filter*/
+    /*transition: all .5s;*/
+}
+
+.galerie__figure:hover{
+    transform: scale(2);
+    z-index: 10;
+}
+
+.galerie__figure:hover .galerie__img{
+    filter: none;
+}
+
+/* figcaption */
+.galerie__caption{
+
+}

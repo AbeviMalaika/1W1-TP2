@@ -65,8 +65,11 @@ deux possibilité: ouvrir ou fermer
 
 
 #burger {
-    transform: rotate(0);
-    transition: transform .5s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+    z-index: 10;
 }
 
 .menu {
@@ -81,6 +84,7 @@ deux possibilité: ouvrir ou fermer
     background-color: #000;
     gap: 5px;
     padding: 5px;
+    width: 250px;
 }
 
 .menu a{

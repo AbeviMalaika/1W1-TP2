@@ -1,0 +1,47 @@
+/*
+<!-- pied de page -->
+<div class="global" id="piedpage">
+    <footer>
+        <!--///////////////////////////////////////////// première ligne-->
+        <div class="footer__conteneur__1">
+            <section class="footer__adresse">Adresse</section>
+            <section class="footer__lien">Lien</section>
+            <section class="footer__texte">Texte</section>
+        </div>
+        <!--///////////////////////////////////////////// deuxième ligne-->
+        <div class="footer__conteneur__2">
+            <section class="image">Images</section>
+            <section class="footer__lien">Liens</section>
+        </div>
+        <!--///////////////////////////////////////////// troisième ligne-->
+        <div class="footer__conteneur__3">
+            <section class="icone">Icone</section>
+        </div>
+    </footer>
+</div>
+*/
+
+#piedpage > footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#piedpage > footer > div{
+    display: flex;
+    border: 1px solid #aaa;
+}
+
+#piedpage > footer > div > section{
+    border: 1px dotted #777;
+}
+
+.footer__adresse ul,
+.footer__lien ul{
+    list-style-type: none;
+}
+
+.footer__conteneur__3{
+    justify-content: center;
+    gap: 20px;
+}
