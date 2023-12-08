@@ -21,6 +21,10 @@
 </div>
 */
 
+footer{
+    padding-top: 10px;
+}
+
 #piedpage > footer{
     display: flex;
     flex-direction: column;
@@ -29,12 +33,14 @@
 
 #piedpage > footer > div{
     display: flex;
-    border: 1px solid #aaa;
+    /*border: 1px solid #aaa; possiblement retiré*/
 }
 
+/* possiblement retiré
 #piedpage > footer > div > section{
     border: 1px dotted #777;
 }
+*/
 
 .footer__adresse ul,
 .footer__lien ul{
@@ -44,4 +50,16 @@
 .footer__conteneur__3{
     justify-content: center;
     gap: 20px;
+}
+
+.footer__image figure{
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+}
+
+.footer__sociaux figure{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }

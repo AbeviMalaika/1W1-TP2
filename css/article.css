@@ -1,0 +1,26 @@
+/*
+<div class="global" id="article">
+    <section>
+        <h2>Articles</h2>
+        <article>
+            <h3>Une merveilleuse recette de lait de poule !</h3>
+            <p>Le lait de poule est une boisson populaire à Noël. On opte pour cette version maison à base de lait chaud, de crème et de jaunes d’œufs. On aromatise le mélange avec du rhum ainsi que des épices et de la vanille. On range la boisson au réfrigérateur pour la refroidir avant de la filtrer. On lève notre verre à ce délice du temps des fêtes!</p>
+            <ul>
+                <li>Dans une casserole, hors du feu, mélanger au fouet le sucre et la fécule. Ajouter les oeufs les jaunes d’oeufs et les oeufs et mélanger jusqu’à ce que la préparation soit homogène. Ajouter le lait et la crème en fouettant continuellement. Porter à ébullition à feu moyen en remuant et en raclant le fond et la paroi de la casserole. Retirer du feu.</li>
+                <li>Ajouter le rhum, les épices et la vanille. Mélanger. Verser dans un contenant à fermeture hermétique. Laisser tiédir. Couvrir et réfrigérer 6 heures.</li>
+                <li>Déposer un tamis au-dessus d'un bol. Filtrer le lait de poule. Composter les épices et la vanille. Servir dans verre avec des glaçons, si désiré. Ajouter du lait ou du rhum, au goût.</li>
+            </ul>
+        </article>
+        <figure>
+            <img src="images/laitDePoule.jpg" alt="lait_de_poule">
+            <figcaption>Recette de lait de poule de Ricardo</figcaption>
+        </figure>
+    </section>
+</div>
+*/
+
+#article .article__recette{
+    display: flex;
+    flex-direction: row;
+}
+
