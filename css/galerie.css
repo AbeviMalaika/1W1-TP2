@@ -7,11 +7,6 @@
 </figure>
 */
 
-/*la section galerie*/
-#galerie{
-    background-color: brown;
-}
-
 .galerie{
     display: flex;
     flex-wrap: wrap;
@@ -33,16 +28,17 @@
 /*image*/
 .galerie__img{
     width: 100%;
-    /*filter: grayscale(100%);*/
-    /*filter: hue-rotate(170deg);*/
-    filter: blur(2px) grayscale(100%);
+    filter: blur(2px) hue-rotate(70deg);
     /*on ajoute plusieurs filtres à la même propriété filter*/
-    /*transition: all .5s;*/
+    border: 2px solid white;
+    outline: 2px solid #4f4
+
 }
 
 .galerie__figure:hover{
     transform: scale(2);
-    z-index: 10;
+    /*Permet que l'image en focus s'affiche au dessus de toutes les autres*/
+    z-index: 9;
 }
 
 .galerie__figure:hover .galerie__img{

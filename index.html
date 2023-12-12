@@ -6,19 +6,28 @@
     <title>TP2</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/entete.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/galerie.css">
     <link rel="stylesheet" href="css/formulaire.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tableau.css">
     <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Junge&family=Merienda:wght@300&family=Rosarivo&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
     
 <!-- entete -->
     <div class="global" id="entete">
         <header>
-            <img src="https://s2.svgbox.net/illlustrations.svg?ic=jingle-bell&color=000000" width="70" height="70">
-            <h1>La fée de Noël</h1>
+            <form class="entete__recherche">
+                <input type="text" placeholder="Recherche">
+                <code>&#128269</code>
+            </form>
+            <div class="conteneur__logo_titre">
+                <img src="https://s2.svgbox.net/illlustrations.svg?ic=jingle-bell&color=000000" width="70" height="70">
+                <h1>La Fée de Noël</h1>
+            </div>
             <h4>Mise en page Web</h4>
             <input type="checkbox" id="chk_burger">
             <!-- création de bouton avec la balise label -->
@@ -44,6 +53,17 @@
     <div class="global" id="accueil">
         <section>
             <h2>TP2</h2>
+            <h3>le titre du TP2 (à modifier)</h3>
+            <ul>
+                <li>Autrice: Malaïka Abevi</li>
+                <li>582-1W1 – Mise en page Web</li>
+                <li>Techniques d’intégration multimédia</li>
+                <li>Collège de Maisonneuve</li>
+                <li>Ma GitHub-page: <a href="https://github.com/AbeviMalaika">github.com/AbeviMalaika</a></li>
+                <li>Automne 2023</li>
+              </ul>
+              <!--texte de présentation du TP2/updates, qui va être éventuellement remplacé par un texte plus pertinent -->
+              <p>Bienvenue sur la page web de mon TP2! Ceci est une version en développement du TP2, donc encore assez "brouillon". Petit à petit, la page progresse et prend une plus belle allure. Jusqu'à maintenant, j'ai modifié plusieurs sections de ma page et testé plusieurs propriétés CSS, telles que "filter", "clamp()" et "linear-gradient".</p>
         </section>
     </div>
 
@@ -90,12 +110,98 @@
             <h2>Tableau</h2>
             <h3>Un tableau sera présent dans cette section</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime culpa recusandae, dignissimos consectetur vel aperiam, cum corporis ab enim voluptas est. Animi maiores neque magni nesciunt. Mollitia, inventore ea?</p>
+            <!-- conteneur principal du tableau -->
+            <table class="horaire">
+                <caption>Session horaire 2023</caption>
+                <thead>          
+                    <tr>
+                        <th></th>
+                        <th class="jour_semaine">LUN</th>
+                        <th class="jour_semaine">MAR</th>
+                        <th class="jour_semaine">MER</th>
+                        <th class="jour_semaine">JEU</th>
+                        <th class="jour_semaine">VEN</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="heure">8h</th> 
+                        <td class="vide"></td> <!-- Lundi -->
+                        <td rowspan="2" class="cours_edu">Éduc</td> <!-- Mardi -->
+                        <td class="vide"></td> <!-- Mercredi -->
+                        <td rowspan="3" class="cours_conc">1M2 Conc. graph.</td> <!-- Jeudi -->
+                        <td class="vide"></td> <!-- Vendredi -->
+                    </tr>
+                    <tr>
+                        <th class="heure">9h</th> 
+                        <td class="vide"></td> <!-- Lundi -->
+                        <td class="vide"></td> <!-- Mercredi -->
+                        <td class="vide"></td> <!-- Vendredi -->
+                    </tr>
+                    <tr>
+                        <th class="heure">10h</th> 
+                        <td class="vide"></td> <!-- Lundi -->
+                        <td class="vide"></td> <!-- Mardi -->
+                        <td class="vide"></td> <!-- Mercredi -->
+                        <td rowspan="2" class="cours_vid">1M1 Vidéo</td> <!-- Vendredi -->
+                    </tr>
+                    <tr>
+                        <th class="heure">11h</th>
+                        <td rowspan="3" class="cours_ang">Anglais</td> <!-- Lundi -->
+                        <td class="vide"></td> <!-- Mardi -->
+                        <td rowspan="2" class="cours_jeu">1J1 Jeu</td> <!-- Mercredi -->
+                        <td class="vide"></td> <!-- Jeudi -->
+                    </tr>
+                    <tr>
+                        <th class="heure">12h</th>
+                        <td rowspan="2" class="pausecom">Pause Com.</td> <!-- Mardi -->
+                        <td rowspan="2" class="pausecom">Pause Com.</td> <!-- Jeudi -->
+                        <td class="vide"></td> <!-- Vendredi -->
+                    </tr>
+                    <tr>
+                        <th class="heure">13h</th>
+                        <td class="vide"></td> <!-- Mercredi -->
+                        <td class="vide"></td> <!-- Vendredi -->  
+                    </tr>
+                    <tr>
+                        <th class="heure">14h</th>
+                        <td class="vide"></td> <!-- Lundi -->
+                        <td rowspan="3" class="cours_web">1W1 Web</td> <!-- Mardi -->
+                        <td rowspan="3" class="cours_vid">1M1 Vidéo</td> <!-- Mercredi -->
+                        <td rowspan="2" class="cours_web">1W1 Web</td> <!-- Jeudi -->
+                        <td rowspan="3" class="cours_jeu">1J1 Jeu</td> <!-- Vendredi -->     
+                    </tr>
+                    <tr>
+                        <th class="heure">15h</th>
+                        <td rowspan="3" class="cours_conc">1M2 Conc. graph.</td> <!-- Lundi -->
+                    </tr>
+                    <tr>
+                        <th class="heure">16h</th>
+                        <td class="vide"></td> <!-- Lundi -->        
+                    </tr>
+                    <tr>
+                        <th class="heure">17h</th>
+                        <td class="vide"></td> <!-- Mardi -->
+                        <td class="vide"></td> <!-- Mercredi -->
+                        <td class="vide"></td> <!-- Jeudi -->
+                        <td class="vide"></td> <!-- Vendredi -->
+                    </tr>                    
+                </tbody>
+                <tfoot>
+                    <th class="piedtable__total">Total d'heures de cours par jour</th>
+                    <td class="piedtable__heure">6h</td>
+                    <td class="piedtable__heure">5h</td>
+                    <td class="piedtable__heure">5h</td>
+                    <td class="piedtable__heure">5h</td>
+                    <td class="piedtable__heure">5h</td>
+                </tfoot>
+            </table>
         </section>
     </div>
 
 <!-- section article -->
     <div class="global" id="article">
-        <section>
+        <section class="article">
             <h2>Articles</h2>
             <section class="article__recette">   
                 <article>
@@ -130,23 +236,43 @@
             <h2>Galerie d'images</h2>
             <figure class="galerie">
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/mdr-papillon-fleur.jpg" alt="">
-                    <figcaption class="galerie__caption"></figcaption>
+                    <img class="galerie__img" src="images/arbre_lumineux.jpg" alt="">
+                    <figcaption class="galerie__caption">Arbre lumineux</figcaption>
                 </figure>
                 
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/64a300d0572f25f2be24798b_papillon-monarque-emergence20-topweb.jpg" alt="">
-                    <figcaption class="galerie__caption"></figcaption>
+                    <img class="galerie__img" src="images/pain-d-epices-decore.jpg" alt="">
+                    <figcaption class="galerie__caption">Pain d'épices</figcaption>
                 </figure>
                 
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/213220711-macrophotographie-papillons-dans-les-fleurs-avec-lumière-du-matin-av.jpg" alt="">
-                    <figcaption class="galerie__caption"></figcaption>
+                    <img class="galerie__img" src="images/reines_lumineux.jpg" alt="">
+                    <figcaption class="galerie__caption">Reines de Noël</figcaption>
                 </figure>
                
                 <figure class="galerie__figure">
-                    <img class="galerie__img" src="images/20.jpg" alt="">
-                    <figcaption class="galerie__caption"></figcaption>
+                    <img class="galerie__img" src="images/reunion_noel.webp" alt="">
+                    <figcaption class="galerie__caption">Reunion de Noël</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/best-christmas-parades-650deefec60b2.jpg" alt="">
+                    <figcaption class="galerie__caption">Parade de Noël</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/disney-christmas-day-parade-1.webp" alt="">
+                    <figcaption class="galerie__caption">Parade de Noël spécial Disney</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/Magical-Christmas-Winter-Wonderland-Graphic-76816452-1.png" alt="">
+                    <figcaption class="galerie__caption">Paysage de Noël</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/67854538_4697998ededfc4-4314-496d-8bfd-b1e2b21db440_ORIGINAL.avif" alt="">
+                    <figcaption class="galerie__caption">Bûche de Noël</figcaption>
                 </figure>
             </figure>
         </section>
@@ -169,13 +295,13 @@
                     </ul>
                 </section>
                 <section class="footer__lien">
-                    <h4>Liens pour le temps des fêtes</h4>
+                    <h4>Liens utiles pour la conception Web</h4>
                     <ul>
-                        <li><a href="https://boutiquedenoel.ca/">La Boutique de Noël</a></li>
-                        <li><a href="#">MDN tableau</a></li>
-                        <li><a href="">MDN linear-gradient</a></li>
-                        <li><a href="">MDN clamp</a></li>
-                        <li><a href="">MDN filter</a></li>
+                        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN table</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient">MDN linear-gradient</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">MDN clamp()</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">MDN filter</a></li>
                     </ul>
                 </section>
                 <section class="footer__sociaux">
@@ -194,19 +320,13 @@
                 <section class="footer__image">
                     <h4>En collaboration avec</h4>
                     <figure>
-                        <img src="images/tim.png" width="81" height="40">
-                        <img src="images/logo_college_maisonneuve@2x.png" width="138" height="40">
+                        <img src="images/tim.png" width="101" height="50">
+                        <img src="images/logo_college_maisonneuve.png" width="173" height="50">
                     </figure>
                 </section>
-                <section class="footer__lien">
-                    <ul>
-                        <h4>Liens utiles pour la conception Web</h4>
-                        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN table</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient">MDN linear-gradient</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">MDN clamp()</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">MDN filter</a></li>
-                    </ul>
+                <section class="footer__text">
+                    <h4>À propos du département</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perspiciatis reprehenderit quas error maiores veritatis minus saepe laboriosam animi veniam. Minima dignissimos ex tempore rerum corporis soluta nobis sit. Mollitia!</p>
                 </section>
             </div>
             <!--///////////////////////////////////////////// troisième ligne-->

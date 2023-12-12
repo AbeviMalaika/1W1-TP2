@@ -22,11 +22,9 @@
 
 #chk_burger:checked~.menu {
     transform: translateY(0);
+    /*permet que le menu se déroule de l'arrière de l'entête pour être cacher*/
+    z-index: -1;
 }
-/*permet de controler l'apparenxce du bouton burger 
-deux possibilité: ouvrir ou fermer
-
-*/
 
 #burger {
     width: 40px;
@@ -34,12 +32,19 @@ deux possibilité: ouvrir ou fermer
     margin-left: auto;
 }
 
+/*l'icone pour le menu burger*/
 #burger img{
     position: absolute;
     top: 0;
     left: 0;
 }
 
+/* 
+Permet de controler l'apparence du bouton burger//////////////////////////////////////////////////////// 
+Si la case à cocher est coché alors on fait apparaitre l'image "x" et on fait disparaitre l'image burger.
+Inversement, si la case est décoché, on fait apparaitre l'image burger et on fait disparaitre l'image "x".
+*/
+/*l'icone initiale du menu burger est visible*/
 #burger img:nth-of-type(1){
     display: block;
 }
@@ -48,20 +53,15 @@ deux possibilité: ouvrir ou fermer
     display: none;
 }
 
+/*l'icone secondaire "x" du menu burger est visible*/
 #chk_burger:checked~#burger img:nth-of-type(2){
     display: block;
 }
 
-/* si la case a cocher est cocher alors on fait apparaitre l'image "x" et on fait disparaitre l'image burger*/
-
 #chk_burger:checked~#burger img:nth-of-type(1){
     display: none;
 }
-
-#chk_burger:checked~#burger {
-    /*transform: rotate(-90deg);*/
-}   
-
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 #burger {
@@ -69,7 +69,6 @@ deux possibilité: ouvrir ou fermer
     top: 0;
     right: 0;
     margin-left: auto;
-    z-index: 10;
 }
 
 .menu {
@@ -85,6 +84,8 @@ deux possibilité: ouvrir ou fermer
     gap: 5px;
     padding: 5px;
     width: 250px;
+    /*permet que le menu demeure et rentre à l'arrière de l'entête pour être cacher*/
+    z-index: -1;
 }
 
 .menu a{

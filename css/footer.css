@@ -22,7 +22,7 @@
 */
 
 footer{
-    padding-top: 10px;
+    padding: 10px;
 }
 
 #piedpage > footer{
@@ -36,12 +36,6 @@ footer{
     /*border: 1px solid #aaa; possiblement retiré*/
 }
 
-/* possiblement retiré
-#piedpage > footer > div > section{
-    border: 1px dotted #777;
-}
-*/
-
 .footer__adresse ul,
 .footer__lien ul{
     list-style-type: none;
@@ -52,14 +46,19 @@ footer{
     gap: 20px;
 }
 
-.footer__image figure{
-    display: flex;
-    gap: 15px;
-    padding-left: 10px;
-}
-
 .footer__sociaux figure{
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.footer__image figure{
+    display: flex;
+    gap: 50px;
+    padding-left: 10px;
+}
+
+footer h4{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }

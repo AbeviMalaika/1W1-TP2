@@ -47,40 +47,38 @@ body{
     flex-direction: column;
 }
 
-
 #entete {
-    background-image: linear-gradient(90deg, #f00, rgb(190, 76, 152));
+    background-image: linear-gradient(90deg, rgb(63, 10, 10), rgb(68, 0, 0));
     min-height: 1vh;
     position: sticky;
     top: 0;
-}
-
-#entete header {
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    /* permet de définir le referentiel pour le menu */
-    position: relative; 
+    /*permet d'éviter que les éléments de la page aille part dessus l'entete*/
+    z-index: 10;
 }
 
 #accueil{
-    background-color: #7C0902;
+    background-color: #de6e69;
 }
 
 #inscription{
     background-color: rgb(201, 154, 96);
 }
 
+#tableau{
+    background-image: linear-gradient(45deg, white, rgb(82, 82, 238));
+}
+
 #article{
     background-color: greenyellow;
 }
 
-#piedpage footer{
-    background-color: rgb(218, 134, 117);
+#galerie{
+    background-color: rgb(181, 231, 164);
 }
 
-h1{
-    font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+#piedpage{
+    background-color: rgb(218, 134, 117);
+    min-height: 45vh;
 }
 
 h2{
