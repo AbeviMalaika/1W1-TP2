@@ -1,51 +1,166 @@
-/*
-<form action="" class="formulaire">
-    <label for="input__nom" class="etiquette__nom">Nom</label>
-    <input type="text" id="input__nom">
+/*<!-- section inscription -->
+    <div class="global" id="inscription">
+        <section>
+            <div class="conteneur__inscription__titres">
+                <h2>Inscription</h2>
+                <h3>Vous souhaitez rejoindre notre communauté de Lutins?</h3>
+                <h3>Alors inscrivez-vous!</h3>
+            </div>
+            <div class="conteneur__inscription__formtext">
+                <form action="" class="formulaire">
+                    <div class="form__text">
+                        <label for="input__prenom" class="etiquette__text" id="etiquette__prenom">Prénom</label>
+                        <input type="text" id="input__prenom" placeholder="Entrez votre prénom">                    
+                    </div>
 
-    <label for="input__nom" class="etiquette__prenom">Prénom</label>
-    <input type="text" id="input__prenom">
+                    <div class="form__text">
+                        <label for="input__nom" class="etiquette__text" id="etiquette__nom">Nom</label>
+                        <input type="text" id="input__nom" placeholder="Entrez votre nom de famille">                    
+                    </div>
 
-    <label for="input__nom" class="etiquette__tel">Téléphone</label>
-    <input type="text" id="input__tel">
-</form>
+                    <div class="form__text">
+                        <label for="input__nom_utilisateur" class="etiquette__text">Nom d'utilisateur</label>
+                        <input type="text" id="input__nom_utilisateur" name="username" />                    
+                    </div>
+
+                    <div class="form__text">
+                        <label for="input__mdp" class="etiquette__text">Mot de passe (minimum 8 caractères):</label>
+                        <input type="password" id="pass" name="input__mdp" minlength="8" required />                    
+                    </div>
+                    
+                    <div class="form__text">
+                        <label for="input__date_naissance" class="etiquette__text">Start date:</label>
+                        <input type="date" id="input__date_naissance" name="trip-start" value="AAAA-MM-JJ" min="1923-01-01" max="2005-01-01" />
+                    </div>
+
+                    <div class="form__text">
+                        <label for="input__tel" class="etiquette__text" id="etiquette__tel">Téléphone</label>
+                        <input type="text" id="input__tel" placeholder="Entrez votre numéro de téléphone">                    
+                    </div>
+
+                    <div class="form__text">
+                        <label for="input__courriel" class="etiquette__text">Courriel</label>
+                        <input type="email" id="input__courriel" placeholder="Entrez votre addresse courriel" pattern=".+@example\.com" size="30" required />                    
+                    </div>
+
+
+                    <div class="form__text">
+                        <input type="submit" value="Valider" id="bouton"/>                    
+                    </div>
+                </form>
+                
+                <img src="images/elfInscription.png" alt="">
+            </div>
+            <div class="conteneur__inscription__formchk">
+                <fieldset class="form__chk">
+                    <legend>Veuillez cocher les cases obligatoires*</legend>
+                    <label for="input__concours" class="etiquette_chk" id="etiquette__concours">Participer au concours "La Bûche du Siècle"</label>
+                    <input type="checkbox" id="input__concours">
+
+                    <label for="input__infolettre" class="etiquette_chk" id="etiquette__infolettre">S'abonner à l'infolettre</label>
+                    <input type="checkbox" id="input__infolettre">
+
+                    <label for="input__notif" class="etiquette_chk" id="etiquette__notif">Recevoir des notifications par messagerie</label>
+                    <input type="checkbox" id="input__notif">
+
+                    <label for="input__consent" class="etiquette_chk" id="etiquette__consent">Consentement aux termes d'utilisations*</label>
+                    <input type="checkbox" id="input__consent">
+                </fieldset>
+            </div>
+
+
+        </section>
+    </div>
 */
-
-/*
-<fieldset class="form__chk">
-<label for="input__html" class="etiquette__html"></label>
-<input type="checkbox" id="input_html">
-
-<label for="input__js" class="etiquette__js"></label>
-<input type="checkbox" id="input_js">
-
-<label for="input__php" class="etiquette__php"></label>
-<input type="checkbox" id="input_php">
-
-<label for="input__sql" class="etiquette__sql"></label>
-<input type="checkbox" id="input_sql">
-</fieldset>
-*/
-
 .formulaire{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    padding: 40px;
+    border: 2px double green;
+    background:linear-gradient(45deg , #b99856, #FCF6BA, #b39046, #FBF5B7, #aa833f);
 }
 
-.formulaire label{
+#inscription section{
+    gap: 20px;
+}
 
+.conteneur__inscription__formtext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conteneur__inscription__formtext figure{
+    height: 50%;
+}
+
+.conteneur__inscription__formtext figcaption{
+ color: black;
+}
+
+legend{
+    color: #141414;
+    background:linear-gradient(45deg , #b99856, #FCF6BA, #b39046, #FBF5B7, #aa833f);
 }
 
 .formulaire input[type="text"]{
-    width: 400px;
+    width: 300px;
+}
+
+.formulaire input{
+    border-radius: 5px;
+}
+
+.form__bouton input,
+.form__text label{
+    border-radius: 10px;
+}
+
+.form__text{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    color: #141414;
+}
+
+.form__bouton input{
+    margin-top: 20px;
+    width: 100px;
+
+}
+
+#bouton__valide{
+    background-color: rgb(100, 215, 89);
+    color: #141414;    
+}
+
+#bouton__reset{
+    background-color: rgb(106, 23, 23);
+    color: white;
 }
 
 .form__chk{
     display: flex;
     gap: 5px;
+    background:linear-gradient(45deg , #56b958, #c2fcba, #56b346, #bdfbb7, #41aa3f);
+    border: 2px solid rgb(68, 0, 0);
+    flex-wrap: wrap;
+}
+
+.form__chk > div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 200px;
 }
 
 .form__chk label{
-    padding-left: 25px;
+    padding-left: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.etiquette__text{
+    margin-top: 20px;
 }

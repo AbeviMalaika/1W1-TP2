@@ -1,32 +1,33 @@
+/*font-family: 'Rosarivo', cursive;*/
+
 table{
-    border: 2px solid blue;
+    border: 2px solid rgb(148, 0, 0);
     border-collapse: collapse;
     margin: 20px;
 }
 
 td, th{
-    border: 1px solid #444;
+    border: 1px solid #000000;
     font-size: 1.3rem;
     padding: 4px;
     margin: 6px;
 }
 
 th{
-    background-color: #9d6a6a;
+    background-color: #633d3d;
     width: 4rem;
 }
 
 td{
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Rosarivo', cursive;
     width: 7rem;
 }
 
-
-
 .horaire caption{
-    font-family: 'Sacramento', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: clamp(1.8rem, -1.5rem + 8vw, 2.5rem);
+    color: black;
 }
 
 .jour_semaine{
@@ -39,7 +40,7 @@ td{
 
 /*///////////////////////////////////////////////////////////// couleurs des cours et des cases vides*/
 .cours_ang{
-    background-color: rgb(43, 134, 103);
+    background-color: rgb(0, 116, 77);
 }
 
 .cours_edu{
@@ -51,33 +52,35 @@ td{
 }
 
 .cours_web{
-    background-color: salmon;
+    background-color: rgb(255, 75, 66);
 }
 
 .cours_jeu{
-    background-color: rgb(133, 216, 133);
+    background-color: rgb(96, 255, 96);
 }
 
 .cours_vid{
-    background-color: rgb(128, 128, 243);
+    background-color: rgb(61, 61, 255);
 }
 
 .vide{
-    background-color: rgb(249, 233, 211);
+    background-color: rgb(255, 255, 255);
     
 }
 
 .pausecom{
     background-color: rgb(241, 175, 155);
-    font-family: 'Rosarivo', cursive;
 }
 
 /*////////////////////////couleur de la case "total d'heures de cours par jour" du pied du tableau*/
 .piedtable__total{
     background-color: rgb(100, 36, 36);
     font-size: clamp(0.8rem, -1.5rem + 8vw, 1rem);
+    font-weight: bold;
 }
 /*////////////////////////couleur des cases contenants les heures de cours au pied du tableau*/
-.piedtable__heure{
+.piedtable__nombre{
     background-color: #3b991c;
+    font-weight: bold;
+    font-size: clamp(0.8rem, -1.5rem + 8vw, 2rem);
 }

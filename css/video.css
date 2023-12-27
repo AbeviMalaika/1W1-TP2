@@ -1,0 +1,43 @@
+/*<!-- section video et/ou son -->
+    <div class="global" id="video_son">
+        <section>
+            <h2>Films festifs</h2>
+            <h3>Des classiques et des incontournables !</h3>
+            <p>Vous ne savez pas quoi écouter et vous êtes fatigués d'écouter "Le Grinch" à chaque Noël? Pas d'inquiétude, Nous vous avons préparé une liste de film à écouter qui vous donneront envie de boire encore plus de lait de poule (ou pas ?) !</p>
+            <div class="video_son__liste" id="liste__video">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zcXNeG5okgA?si=yHsajMUOE_jI0LBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PmgVDi59_Rs?si=5OsvZ3CUOa9P1OQb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pd3RbMj7iuA?si=upJ3_TosP7OoVmEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6zoedxpg_yQ?si=coQLJBqNtKsKz9_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+*/
+
+
+
+.video_son__liste {
+    display: flex;
+    width: 61.6vw;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 20px; 
+}
+
+iframe{
+    width: 30vw;
+    border-radius: 15px;
+    border: 10px double white;
+    outline: 5px dotted rgb(211, 170, 46);
+}
+
+iframe:nth-of-type(1),
+iframe:nth-of-type(4){
+    background-color: red;
+}
+
+iframe:nth-of-type(2),
+iframe:nth-of-type(3){
+    background-color: green;
+}

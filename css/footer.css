@@ -4,25 +4,78 @@
     <footer>
         <!--///////////////////////////////////////////// première ligne-->
         <div class="footer__conteneur__1">
-            <section class="footer__adresse">Adresse</section>
-            <section class="footer__lien">Lien</section>
-            <section class="footer__texte">Texte</section>
+            <section class="footer__adresse">
+                    <h4>Adresse</h4>
+                    <ul>
+                        <li><a href="https://cmaisonneuve.qc.ca">Collège de Maisonneuve</a></li>
+                        <li>3800 Sherbrooke Est</li>
+                        <li>Montréal, QC, Canada</li>
+                        <li>H1X 2A2</li>
+                        <li>Tel: 514-254-7131</li>
+                    </ul>
+                </section>
+                <section class="footer__lien">
+                    <h4>Liens utiles pour la conception Web</h4>
+                    <ul>
+                        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN table</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient">MDN linear-gradient</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">MDN clamp()</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">MDN filter</a></li>
+                    </ul>
+                </section>
+                <section class="footer__text">
+                    <h4>À propos du département</h4>
+                    <p>Le département d'intégration multimédia est stimulant, créatif et innovateur. La technique d'intégration multimédia (TIM) est un programme collégial qui amène les étudiants à faire de la programmation de jeux vidéos, à formater des pages web, à faire du design graphique, à faire de la création vidéo et bien plus! </p>
+                </section>
         </div>
         <!--///////////////////////////////////////////// deuxième ligne-->
         <div class="footer__conteneur__2">
-            <section class="image">Images</section>
-            <section class="footer__lien">Liens</section>
+            <section class="footer__image">
+                    <h4>En collaboration avec</h4>
+                    <figure>
+                        <img src="images/piedpage/tim.png" width="101" height="50">
+                        <img src="images/piedpage/logo_college_maisonneuve.png" width="173" height="50">
+                    </figure>
+                </section>
+            <section class="footer__sociaux">
+                    <h4>Nous suivre:</h4>
+                    <figure>
+                        <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="32" height="32">
+                        <img src="https://s2.svgbox.net/social.svg?ic=google&color=000000" width="32" height="32">
+                        <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000000" width="32" height="32">
+                        <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000000" width="32" height="32">
+                        <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="32" height="32">
+                    </figure>
+                </section>
         </div>
         <!--///////////////////////////////////////////// troisième ligne-->
         <div class="footer__conteneur__3">
-            <section class="icone">Icone</section>
+            <p>Avis de confidentialité | Privacy Notice</p>
         </div>
     </footer>
 </div>
 */
 
+.global footer{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.global footer section{
+    display: flex;
+    flex: 0 1 1000px;
+    /*border: 1px solid #aaa;*/
+    /*background-color: rgba(0,0,0,.2);*/
+    padding: 0 30px 30px 0;
+    border-bottom: 1px solid white;
+}
+
+
 footer{
     padding: 10px;
+    justify-content: center;
+    font-size: 0.9rem;
 }
 
 #piedpage > footer{
@@ -46,6 +99,11 @@ footer{
     gap: 20px;
 }
 
+.footer__conteneur__3 p{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
 .footer__sociaux figure{
     display: flex;
     flex-direction: row;
@@ -58,7 +116,27 @@ footer{
     padding-left: 10px;
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: green;
+}
+
 footer h4{
+    padding-bottom: 20px;
     font-size: 1.1rem;
-    margin-bottom: 10px;
+}
+
+footer p{
+    font-style: oblique;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0;
+}
+
+h5{
+    font-size: 0.8rem;
 }

@@ -1,51 +1,106 @@
-/*
-<figure class="galerie">
-<figure class="galerie__figure">
-    <img class="galerie__img" src="images/64a300d0572f25f2be24798b_papillon-monarque-emergence20-topweb.jpg" alt="">
-    <figcaption class="galerie__caption"></figcaption>
-</figure>
-</figure>
-*/
+/*<!-- section galerie d'image -->
+    <div class="global" id="galerie">
+        <section>
+            <h2>Galerie des oeuvres des Lutins</h2>
+            <p>OH OH OH, nos très chers Lutins ont réalisés de sublimes oeuvres de Noël et ça mérite d'être présenté ! Nous vous remercions d'avoir participé à notre concours "L'Art de Noël"</p>
+            <p>Voici nos finalistes:</p>
+            <figure class="galerie">
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/galerie/tableauMaisonNoel.webp" alt="">
+                    <figcaption class="galerie__caption">Arbre lumineux</figcaption>
+                </figure>
+                
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/galerie/tableauChateauNoel.jpg" alt="">
+                    <figcaption class="galerie__caption">Pain d'épices</figcaption>
+                </figure>
+                
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/galerie/pereNoel.jpg" alt="">
+                    <figcaption class="galerie__caption">Reines de Noël</figcaption>
+                </figure>
+               
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/galerie/Château-et-Minion-1.jpg" alt="">
+                    <figcaption class="galerie__caption">Reunion de Noël</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/galerie/gateauNoel.webp" alt="">
+                    <figcaption class="galerie__caption">Parade de Noël</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/galerie/maisonLumineuse.jpg" alt="">
+                    <figcaption class="galerie__caption">Parade de Noël spécial Disney</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/Magical-Christmas-Winter-Wonderland-Graphic-76816452-1.png" alt="">
+                    <figcaption class="galerie__caption">Paysage de Noël</figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="images/67854538_4697998ededfc4-4314-496d-8bfd-b1e2b21db440_ORIGINAL.avif" alt="">
+                    <figcaption class="galerie__caption">Bûche de Noël</figcaption>
+                </figure>
+            </figure>
+        </section>
+    </div>*/
 
 .galerie{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 55px;
     padding: 20px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
 }
 
 /*conteneur d'image*/
 .galerie__figure{
-    width: 300px;
+    height: 150px;
+    width: 250px;
     transform: scale(1);
     transition: all .5s;
     /*border: 1px solid #444;*/
+    text-align: center;
+    filter: drop-shadow(16px 16px 20px rgb(192, 91, 91)) invert(5%);
 }
 
 /*image*/
 .galerie__img{
     width: 100%;
-    filter: blur(2px) hue-rotate(70deg);
+    height: 100%;
+    filter: blur(1px) grayscale(20%);
     /*on ajoute plusieurs filtres à la même propriété filter*/
     border: 2px solid white;
-    outline: 2px solid #4f4
+    /*Pour avoir une ligne dorée en plus de la ligne blanche*/
+    outline: 2px solid rgb(211, 170, 46);
+    /*Pour avoir des images qui ont la même taille sans être déformé en étant en miniature/vignettes*/
+    object-fit: cover;
 
 }
 
 .galerie__figure:hover{
-    transform: scale(2);
+    transform: scale(1.5);
     /*Permet que l'image en focus s'affiche au dessus de toutes les autres*/
     z-index: 9;
 }
 
 .galerie__figure:hover .galerie__img{
     filter: none;
+    object-fit: contain;
+    width: 300px;
+    height: auto;
 }
 
 /* figcaption */
-.galerie__caption{
+.galerie__figure:nth-of-type(odd){
+    color: rgb(49, 0, 0);
+}
 
+.galerie__figure:nth-of-type(even){
+    color: rgb(1, 39, 11);
 }

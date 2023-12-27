@@ -80,7 +80,8 @@ Inversement, si la case est décoché, on fait apparaitre l'image burger et on f
     /*bottom: 0;*/
     transform: translateY(-200%);
     transition: transform .5s;
-    background-color: #000;
+    background-color: #2a3512;
+    border-radius: 3px;
     gap: 5px;
     padding: 5px;
     width: 250px;
@@ -90,4 +91,16 @@ Inversement, si la case est décoché, on fait apparaitre l'image burger et on f
 
 .menu a{
     color: white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+/*État en survol*/
+.menu a:hover{
+    color: red;
+}
+
+/*État en cliquant*/
+.menu a:active{
+    color: green;
 }

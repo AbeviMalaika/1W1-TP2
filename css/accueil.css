@@ -1,0 +1,58 @@
+/*<!-- section accueil -->
+    <div class="global" id="accueil">
+        <section>
+            <h2>TP2</h2>
+            <h3>La Fée de Noël</h3>
+            <ul>
+                <li>Autrice: Malaïka Abevi</li>
+                <li>582-1W1 – Mise en page Web</li>
+                <li>Techniques d’intégration multimédia</li>
+                <li>Collège de Maisonneuve</li>
+                <li>Ma GitHub-page: <a href="https://github.com/AbeviMalaika">github.com/AbeviMalaika</a></li>
+                <li>Automne 2023</li>
+              </ul>
+              <!--texte de présentation du TP2/updates, qui va être éventuellement remplacé par un texte plus pertinent -->
+              <p>Bienvenue sur la page web de mon TP2! Ceci est une version en développement du TP2, donc encore assez "brouillon". Petit à petit, la page progresse et prend une plus belle allure. Jusqu'à maintenant, j'ai modifié plusieurs sections de ma page et testé plusieurs propriétés CSS, telles que "filter", "clamp()" et "linear-gradient".</p>
+        </section>
+    </div>*/
+
+#accueil{
+    background-image: url(../images/30407470-idees-deco-interieure-noel.jpeg);
+    background-size: cover;
+}
+
+#accueil section{
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.accueil__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 19, 6, 0.8);
+    border: double 10px white;
+    padding: 20px;
+    width: 50vw;
+    gap: 20px;
+}
+
+.accueil__text p{
+    text-align: center;
+    color: white;
+}
+
+#accueil h2,
+#accueil h3,
+#accueil h2::first-letter{
+    color: white;
+}
+
+#accueil h2{
+    background-color: transparent; /*Pour ne pas que la couleur de fond soit visible*/
+    border: none;/*Pour qu'il n'y ait pas de bordure*/
+}
+
